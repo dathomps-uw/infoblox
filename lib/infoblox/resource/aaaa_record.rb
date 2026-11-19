@@ -8,8 +8,10 @@ module Infoblox
                          :ipv6addr, 
                          :name, 
                          :ttl,
-                         :use_ttl, 
-                         :view
+                         :use_ttl
+
+    # view can not be updated
+    remote_post_accessor :view
     
     remote_attr_reader :dns_name, 
                        :zone

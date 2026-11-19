@@ -1,5 +1,5 @@
 module Infoblox
-  class ZoneForward < Infoblox::Resource
+  class ZoneForward < Resource
     remote_attr_accessor :comment,
                          :disable,
                          :forward_to,

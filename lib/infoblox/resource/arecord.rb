@@ -7,7 +7,8 @@ module Infoblox
                          :extensible_attributes,
                          :ipv4addr,
                          :name,
-                         :ttl
+                         :ttl,
+                         :use_ttl
 
     # view can not be updated
     remote_post_accessor :view

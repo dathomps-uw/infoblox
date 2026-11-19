@@ -7,8 +7,11 @@ module Infoblox
                          :extensible_attributes, 
                          :name, 
                          :ttl,
-                         :view
-    
+                         :use_ttl
+
+    # view can not be updated
+    remote_post_accessor :view
+
     remote_attr_reader :zone
 
 

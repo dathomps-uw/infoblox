@@ -9,7 +9,10 @@ module Infoblox
                          :ttl,
                          :extattrs,
                          :extensible_attributes,
-                         :view
+                         :use_ttl
+
+    # view can not be updated
+    remote_post_accessor :view
     
     def self._return_fields
       if Infoblox.wapi_version == '1.0'

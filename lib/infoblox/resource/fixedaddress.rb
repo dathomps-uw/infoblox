@@ -15,6 +15,9 @@ module Infoblox
                          :use_nextserver,
                          :comment
 
+    # view can not be updated
+    remote_post_accessor :view
+
     wapi_object "fixedaddress"
   end
 end
